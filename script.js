@@ -10,9 +10,9 @@ const Productos = [
 
 for (const producto of Productos){
     let contenedor= document. createElement("div");
-    contenedor.innerHTML=`<h3>  ${Productos.nombre}</h3>
-                            <p>N° Producto: ${Productos.id}</p>
-                            <b>PRECIO $ ${Productos.precio}</b>
+    contenedor.innerHTML=`<h3>  ${producto.nombre}</h3>
+                            <p>N° Producto: ${producto.id}</p>
+                            <b>PRECIO $ ${producto.precio}</b>
                             <button id="miBoton"> Agregar al Carrito</button>`;
     document.body.appendChild(contenedor);
 }
